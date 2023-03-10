@@ -27,6 +27,9 @@ public class DemoApplication {
 		Person p = (Person) context.getBean("myPerson");
 		System.out.println(p);
 
+		MyCalculatorService calculatorService = (MyCalculatorService) context.getBean("myCalculatorService");
+		calculatorService.calcAdd(3,5);
+
 	}
 
 }
